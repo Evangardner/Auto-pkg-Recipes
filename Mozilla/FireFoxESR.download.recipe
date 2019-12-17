@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest FireFoxESR disk image.</string>
     <key>Identifier</key>
-    <string>com.github.evangardner.download.FireFoxESR</string>
+    <string>com.github.evangardner.download.firefoxesr</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
