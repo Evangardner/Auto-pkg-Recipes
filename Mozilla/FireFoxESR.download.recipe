@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>FireFoxESR</string>
         <key>DOWNLOAD_URL</key>
-        <string>https://download.mozilla.org/?product=firefox-esr-latest&os=osx&lang=en-US</string>
+        <string>https://download.mozilla.org/?product=firefox-esr-latest&amp;os=osx&lang=en-US</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.0</string>
