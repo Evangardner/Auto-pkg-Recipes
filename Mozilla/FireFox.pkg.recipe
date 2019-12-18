@@ -50,6 +50,37 @@
             </dict>
         </dict>
         <dict>
+          <key>Processor</key>
+          <string>DirectoryCreator</string>
+          <key>Arguments</key>
+          <dict>
+              <key>name</key>
+              <string>distribution</string>
+              <key>path</key>
+              <string>%destination_path%/Contents/Resources/</string>
+          </dict>
+        </dict>
+        <dict>
+          <key>Processor</key>
+          <string>FileCreator</string>
+          <key>Arguments</key>
+          <dict>
+              <key>file_content</key>
+              <string>
+              {
+                "policies": {
+                  "DNSOverHTTPS": {
+                    "Enabled": false,
+                    "Locked" : true
+                  }
+                }
+              }
+              </string>
+              <key>file_path</key>
+              <string>%destination_path%/Contents/Resources/distribution/policies.json</string>
+          </dict>
+        </dict>
+        <dict>
             <key>Processor</key>
             <string>PkgCreator</string>
             <key>Arguments</key>
@@ -57,7 +88,7 @@
                 <key>pkg_request</key>
                 <dict>
                     <key>pkgname</key>
-                    <string>ASU-autopkg-%NAME%-%version%</string>
+                    <string>ASU-AutoPKG-%NAME%-%version%</string>
                     <key>version</key>
                     <string>%version%</string>
                     <key>id</key>
