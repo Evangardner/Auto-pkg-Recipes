@@ -51,17 +51,6 @@
         </dict>
         <dict>
             <key>Processor</key>
-            <string>FileCreator</string>
-            <key>Arguments</key>
-            <dict>
-                <key>file_content</key>
-                <string>helloworld</string>
-                <key>file_path</key>
-                <string>%pkgroot%/ASU-autopkg-FireFoxESR-68.3.0/Applications/Firefox.app/Contents/Resources/Distribution/policy.json</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
             <string>PkgCreator</string>
             <key>Arguments</key>
             <dict>
@@ -87,6 +76,17 @@
                         </dict>
                     </array>
                 </dict>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>FileCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>file_content</key>
+                <string>helloworld</string>
+                <key>file_path</key>
+                <string>%pkgroot%/ASU-autopkg-FireFoxESR-68.3.0/Applications/Firefox.app/Contents/Resources/Distribution/policy.json</string>
             </dict>
         </dict>
 
