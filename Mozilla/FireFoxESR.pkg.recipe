@@ -51,6 +51,17 @@
         </dict>
         <dict>
             <key>Processor</key>
+            <string>FileCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>file_content</key>
+                <string>helloworld</string>
+                <key>file_path</key>
+                <string>%pkgroot%/policy.txt</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
             <string>PkgCreator</string>
             <key>Arguments</key>
             <dict>
@@ -78,6 +89,7 @@
                 </dict>
             </dict>
         </dict>
+
     </array>
 </dict>
 </plist>
